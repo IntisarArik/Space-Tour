@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;500&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="destination.css" />
+
+    <title>Space Tour</title>
+  </head>
+
+  <body class="subpage" id="titan">
+    <!-- Header -->
+    <header class="index-header">
+      <div class="logo-wrapper">
+        <img src="assets/shared/logo.svg" alt="" />
+      </div>
+      <hr />
+      <button
+        id="check"
+        aria-controls="nav-lists"
+        aria-expanded="false"
+      ></button>
+
+      <!-- Navbar -->
+      <nav class="index-navbar" data-visible="false">
+        <div class="navbar-wrapper">
+          <ul id="nav-lists">
+            <li
+              id="home-page"
+              onclick="location.href='index.html';"
+              class="link-list"
+            >
+              <a href="index.html"><span>00</span> Home</a>
+            </li>
+            <li
+              id="destination-page"
+              onclick="location.href='destination-moon.html';"
+              class="link-list"
+            >
+              <a href="destination-moon.html"><span>01</span> Destination</a>
+            </li>
+            <li
+              id="crew-page"
+              onclick="location.href='crew.html';"
+              class="link-list"
+            >
+              <a href="crew.html"><span>02</span> Crew</a>
+            </li>
+            <li
+              id="tech-page"
+              onclick="location.href='technology.html';"
+              class="link-list"
+            >
+              <a href="technology.html"><span>03</span> Technology</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="subpage-body">
+        <div class="description-left">
+          <div class="pick-description">
+            <h2><span>01</span> Pick your destination</h2>
+          </div>
+
+          <!-- Planet Image -->
+          <div class="planet-img-wrapper">
+            <img
+              class="planet-img"
+              src="assets/destination/image-titan.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- Sub Menu -->
+        <div class="description-right">
+          <nav class="destination-navigation">
+            <ul>
+              <li>
+                <a class="moon-menu" href="destination-moon.html">Moon</a>
+              </li>
+              <li>
+                <a class="mars-menu" href="destination-mars.html">Mars</a>
+              </li>
+              <li>
+                <a class="europa-menu" href="destination-europa.html">Europa</a>
+              </li>
+              <li>
+                <a class="titan-menu" href="destination-titan.html">Titan</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Planet Description -->
+          <div class="subpage-description">
+            <h1>Titan</h1>
+            <p>
+              The only moon known to have a dense atmosphere other than Earth,
+              Titan is a home away from home (just a few hundred degrees
+              colder!). As a bonus, you get striking views of the Rings of
+              Saturn.
+            </p>
+            <hr class="destination-hr" />
+
+            <div class="information">
+              <div class="destination">
+                <h4>Avg. distance</h4>
+                <h3>1.6 bil. km</h3>
+              </div>
+
+              <div class="time">
+                <h4>Est. travel time</h4>
+                <h3>7 years</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS Link -->
+    <script src="nav.js" defer></script>
+  </body>
+</html>
