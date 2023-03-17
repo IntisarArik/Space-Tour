@@ -207,6 +207,12 @@ body {
 
 /* Media Queries Index */
 
+@media screen and (min-width: 1000px) {
+  .index-bg {
+    background-size: cover;
+  }
+}
+
 @media screen and (max-width: 1115px) {
   span {
     display: none;
