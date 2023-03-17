@@ -604,6 +604,13 @@
 
 /* White space problem fix */
 
+@media screen and (min-width: 1000px) {
+  #crew {
+    background: url(assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 796px) {
   .description-right {
     margin-top: 2rem;
